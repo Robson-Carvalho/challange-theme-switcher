@@ -1,16 +1,19 @@
 const body = document.body;
 const ball = document.querySelector(".ball");
-localStorage.setItem("theme", "light");
+const theme = {
+  value: "light",
+};
 
 const changeTheme = () => {
-  if (localStorage.theme == "light") {
+  if (theme.value == "light") {
     body.style.backgroundColor = "var(--dark)";
     body.style.color = "var(--light)";
-    localStorage.setItem("theme", "dark");
-  } else if (localStorage.theme == "dark") {
+    theme.value = "dark";
+  } else if (theme.value == "dark") {
     body.style.backgroundColor = "var(--light)";
     body.style.color = "var(--dark)";
-    localStorage.setItem("theme", "light");
+
+    theme.value = "light";
   }
 };
 

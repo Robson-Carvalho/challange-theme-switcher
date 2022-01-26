@@ -1,25 +1,25 @@
-:root{
-  --dark: #292C35;
-	--light: #F1F1F1;
-	--label: #111;
+:root {
+  --dark: #292c35;
+  --light: #f1f1f1;
+  --label: #111;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html{
+html {
   font-size: 10px;
 }
 
-body{
+body {
   color: var(--dark);
 }
 
-.title{
-  font-family: 'Roboto', sans-serif;
+.title {
+  font-family: "Roboto", sans-serif;
   font-size: 3.8rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
@@ -28,18 +28,18 @@ body{
   margin-top: 5rem;
 }
 
-.container{
+.container {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
 }
 
-.switcher{
+.switcher {
   position: relative;
   width: 18rem;
   height: 8rem;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
   background: var(--label);
 
   display: flex;
@@ -49,12 +49,12 @@ body{
   border-radius: 59px;
 }
 
-.switcher > img{
+.switcher > img {
   width: 6rem;
   height: 6rem;
 }
 
-.switcher > .ball{
+.switcher > .ball {
   position: absolute;
   left: 6%;
   transform: translateX(-6%);
@@ -64,16 +64,16 @@ body{
 
   border-radius: 100%;
 
-  transition: .3s;
-} 
+  transition: 0.3s;
+}
 
 .switcher > .ball.active {
   left: 94%;
   transform: translateX(-94%);
 }
 
-.copyRight{
-  font-family: 'Roboto', sans-serif;
+.copyRight {
+  font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   /* font-size: 16px; */
   position: absolute;
